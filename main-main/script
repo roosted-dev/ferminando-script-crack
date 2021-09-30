@@ -1,0 +1,460 @@
+local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Script Hub by Ferminando", 5013109572)
+local swit = false
+ESP.TeamMates = false
+TeamCheck = false
+TeamCheck2 = false
+VisCheck = false
+
+Notify({
+    Description = "스크립트 허브를 써주셔서 감사합니당";
+    Title = "Script Hub";
+    Duration = 3;
+    });
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(37, 38, 44),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(28, 29, 34),
+LightContrast = Color3.fromRGB(70, 91, 121),
+DarkContrast = Color3.fromRGB(28, 29, 34),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+
+local main = venyx:addPage("메인", 5012544693)
+local gam = main:addSection("스크립트")
+
+if game.PlaceId == 155615604 then --프리즌 라이프
+    gam:addButton("프리즌 라이프 어드민", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BqDQxCh7"))();
+    end)
+    gam:addButton("프리즌 라이프 검은색 화면 삭제", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/txtTb5xP"))();
+    end)
+end
+
+if game.PlaceId == 6872274481 then --배드워즈
+    gam:addButton("배드워즈 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+end
+
+if game.PlaceId == 606849621 then --젤브
+    gam:addButton("제일브레이크 오토팜", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+    end)
+end
+
+if game.PlaceId == 445664957 then --파쿠르
+    gam:addButton("파쿠르 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Parkour/main/Main.lua"))()
+    end)
+end
+
+if game.PlaceId == 142823291 then --머더 2
+    gam:addButton("머더 2 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+    end)
+    gam:addButton("V.G 스크립트", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+end
+
+if game.PlaceId == 286090429 then --아스널
+    gam:addButton("아스널 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+    end)
+end
+
+if game.PlaceId == 3527629287 then --빅페인트볼
+    gam:addButton("빅페인트볼 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+    end)
+end
+
+if game.PlaceId == 662417684 then --럭키블럭
+    gam:addButton("럭키블럭 스크립트", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/xTXe5H9w"))()
+    end)
+end
+
+if game.PlaceId == 914010731 then --로구울
+    gam:addButton("로구울 스크립트", function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua"))()
+    end)
+end
+
+if game.PlaceId == 1224212277 then --매드시티
+    gam:addButton("매드시티 스크립트", function()
+        loadstring(game:HttpGetAsync("https://jack1214060.xyz/jayhub"))()
+    end)
+end
+
+if game.PlaceId == 2753915549 then --블피
+    gam:addButton("블피 스크립트 (추천)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/ALLFREE/main/hyperx.lua"))()
+    end)
+    gam:addButton("블피 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-IDK/Blox-Fruits-Script/main/blox%20fruit%20script.txt"))()
+    end)
+end
+
+if game.PlaceId == 4442272183 then --블피 신세계
+    gam:addButton("블피 스크립트 (추천)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/ALLFREE/main/hyperx.lua"))()
+    end)
+    gam:addButton("블피 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-IDK/Blox-Fruits-Script/main/blox%20fruit%20script.txt"))()
+    end)
+end
+
+if game.PlaceId == 7449423635 then --블피 신신세계
+    gam:addButton("블피 스크립트 (추천)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/ALLFREE/main/hyperx.lua"))()
+    end)
+    gam:addButton("블피 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-IDK/Blox-Fruits-Script/main/blox%20fruit%20script.txt"))()
+    end)
+end
+
+if game.PlaceId == 920587237 then --입양
+    gam:addButton("입양하세요 스크립트", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+end
+
+if game.PlaceId == 6447798030 then --프나펌
+    gam:addButton("프나펌 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+    end)
+end
+
+if game.PlaceId == 537413528 then --배만들기
+    gam:addButton("배 만들기 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+    end)
+end
+
+if game.PlaceId == 4520749081 then --킹피
+    gam:addButton("킹피스 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+    end)
+end
+
+if game.PlaceId == 5931540094 then --킹피 레이드
+    gam:addButton("킹피스 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+    end)
+end
+
+if game.PlaceId == 6381829480 then --킹피 신세계
+    gam:addButton("킹피스 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+    end)
+end
+
+if game.PlaceId == 4787629450 then --부가부가
+    gam:addButton("부가부가 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/YEs13421k/BOOGA-SCRIPT/main/Roblox%20Booga%20Booga%20Script"))();
+    end)
+end
+
+if game.PlaceId == 2809202155 then --너기묘
+    gam:addButton("너기묘 스크립트", function()
+        getgenv().Key = "BETA_V1"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/ALLHACKLOADER/main/YBALOADER"))()
+    end)
+end
+
+if game.PlaceId == 5290908008 then --너기묘 1ㄷ1
+    gam:addButton("너기묘 스크립트", function()
+        getgenv().Key = "BETA_V1"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/ALLHACKLOADER/main/YBALOADER"))()
+    end)
+end
+
+if game.PlaceId == 4643697430 then --스보런
+    gam:addButton("너기묘 스크립트 (추천)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+    end)
+    gam:addButton("너기묘 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/crackus/main/xenonusfix", true))()
+    end)
+end
+
+if game.PlaceId == 183364845 then --스피드 런
+    gam:addButton("스피드 런 4 스크립트", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/dragonismcode/robloxscripts/main/speedrun4.lua'), true))()
+    end)
+end
+
+if game.PlaceId == 6679274937 then --반스 월드
+    gam:addButton("반스 월드 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/and45554/DawnyHub/main/Dawny", true))()
+    end)
+end
+
+if game.PlaceId == 2317712696 then --와일드 웨스트
+    gam:addButton("와일드 웨스트 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/scripts/main/yeehaw.lua"))()
+    end)
+end
+
+if game.PlaceId == 111311599 then --크리티컬 스트라이크
+    gam:addButton("크리티컬 스트라이크 스크립트", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/snjSSnHT"))()
+    end)
+end
+
+if game.PlaceId == 189707 then --자연 재해 서바이벌
+    gam:addButton("자연 재해 서바이벌 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+    end)
+end
+
+if game.PlaceId == 13822889 then --럼타
+    gam:addButton("럼타 2 스크립트", function()
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/0x37Dev/Cool-Solo-Dupe-Thing/main/script.lua')()
+    end)
+end
+
+if game.PlaceId == 2788229376 then --다후드
+    gam:addButton("다 후드 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/cjdjmj/new-ui-godmode/main/README.md", true))()
+    end)
+end
+
+if game.PlaceId == 4042427666 then --애니 파이팅 시뮬
+    gam:addButton("애니 파이팅 스크립트", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AokijiFlame/AFS/main/AnimeFightingSim"))()
+    end)
+end
+
+if game.PlaceId == 1345139196 then --애니 파이팅 시뮬
+    gam:addButton("보물 사냥 시뮬레이터", function()
+        loadstring(game:HttpGet("http://void-scripts.com/Scripts/treasureHuntSim.lua"))()
+    end)
+end
+
+if game.PlaceId == 6846458508 then --어유타
+    gam:addButton("어유타", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/johnbruhno/zzz/main/g"))()
+    end)
+end
+
+
+-- first page
+local page = venyx:addPage("스크립트", 5012544693)
+local script = page:addSection("스크립트")
+local ID = page:addSection("게임 ID")
+
+
+script:addButton("투명", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/iiKMg6iw"))();
+end)
+script:addButton("채팅 조작", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ferminando/script/main/chat%20hax"))()
+end)
+script:addButton("Simple Spy (Synpase x, krnl만 가능)", function()
+    loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+end)
+script:addButton("안티 잠수", function()
+    local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+end)
+script:addButton("히트박스", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()
+end)
+script:addButton("InfiniteYield (어드민)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end)
+script:addButton("Dex", function()
+    loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+end)
+script:addButton("채팅로그", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+end)
+ID:addButton(game.PlaceId, function()
+setclipboard(game.PlaceId)
+Notify({
+    Description = "게임 ID가 복사 되었습니다.";
+    Title = "Script Hub";
+    Duration = 3;
+    });
+end)
+
+local gmsc = venyx:addPage("나머지 게임 스크립트", 5012544693)
+local gmscript = gmsc:addSection("스크립트")
+
+gmscript:addButton("던전 퀘스트 스크립트", function() --던퀘
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))();
+end)
+
+local fe = venyx:addPage("FE 스크립트", 5012544693)
+local fescript = fe:addSection("스크립트")
+local fedp = fe:addSection("플레이어")
+local feui = fe:addSection("창")
+
+fescript:addButton("Fe 물건 움직이기", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ferminando/script/main/change%20position"))();
+end)
+fescript:addButton("Fe 물건 움직이기 2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ferminando/script/main/change%20position%202"))();
+end)
+fescript:addButton("Fe 벽 걷기", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ferminando/script/main/walk%20wall"))();
+end)
+fescript:addButton("Fe 트롤링", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/bk5J4cyc"))();
+end)
+fescript:addButton("Fe 날려서 죽이기", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ferminando/script/main/fe%20filling%20kill'))();
+end)
+local PlayList = {}
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do 
+    if v ~= game.Players.LocalPlayer then 
+        table.insert(PlayList,v.Name)
+    end
+end
+
+--   teleport way
+fedp:addDropdown("Players",PlayList,function(ok)
+    xdvalue = ok
+end)
+fedp:addButton("플레이어 목록 초기화", function()
+    table.clear(PlayList)
+    wait(0.1)
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do 
+        if v ~= game.Players.LocalPlayer then 
+            table.insert(PlayList,v.Name)
+        end
+    end
+end)
+
+fedp:addButton("상대 대리고 오기 (아이템 있어야함)", function()
+
+    Target = xdvalue
+    NOW = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+game.Players.LocalPlayer.Character.Humanoid.Name = 1
+local l = game.Players.LocalPlayer.Character["1"]:Clone()
+l.Parent = game.Players.LocalPlayer.Character
+l.Name = "Humanoid"
+wait(0.1)
+game.Players.LocalPlayer.Character["1"]:Destroy()
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+wait(0.1)
+game.Players.LocalPlayer.Character.Animate.Disabled = false
+game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+for i,v in pairs(game:GetService'Players'.LocalPlayer.Backpack:GetChildren())do
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+end
+local function tp(player,player2)
+local char1,char2=player.Character,player2.Character
+if char1 and char2 then
+char1.HumanoidRootPart.CFrame = char2.HumanoidRootPart.CFrame
+end
+end
+local function getout(player,player2)
+local char1,char2=player.Character,player2.Character
+if char1 and char2 then
+char1:MoveTo(char2.Head.Position)
+end
+end
+tp(game.Players[Target], game.Players.LocalPlayer)
+wait(0.1)
+tp(game.Players[Target], game.Players.LocalPlayer)
+wait(0.3)
+getout(game.Players.LocalPlayer, game.Players[Target])
+wait(0.4)
+local sav = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = sav
+
+end)
+fedp:addButton("텔레포트",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[xdvalue].Character.HumanoidRootPart.CFrame 
+end)
+feui:addButton("Fe 날려서 죽이기 창 없애기", function()
+    game.CoreGui["fillingkill"]:Destroy()
+end)
+feui:addButton("Fe 트롤링 창 없애기", function()
+    game.CoreGui["OPFinality"]:Destroy()
+end)
+
+local es = venyx:addPage("ESP", 5012544693)
+local esp = es:addSection("ESP 설정")
+
+esp:addToggle("ESP", nil, function(d)
+    ESP:Toggle(d)
+end)
+esp:addToggle("같은 팀 보이기", nil, function(e)
+    ESP.TeamMates = e
+end)
+
+local setting = venyx:addPage("플레이어", 5012544693)
+local player = setting:addSection("플레이어 설정")
+
+
+player:addSlider("속도", 16, 16, 250, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (v)
+end)
+player:addSlider("점프파워", 50, 50, 250, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = (v)
+end)
+player:addSlider("중력", 200, 0, 200, function(v)
+    game.Workspace.Gravity = (v)
+end)
+player:addButton("리조인", function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+player:addToggle("자동 리스폰", nil, function(v)
+    getgenv().spw = v
+    while wait() do
+    if not getgenv().spw then return end
+    if game.Players.LocalPlayer.Character.Humanoid.Health < 1 and swit == false then
+        poi = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        swit = true
+    end
+
+    if swit == true then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = poi
+        end
+    game.Players.LocalPlayer.CharacterAdded:connect(function()
+        wait(0.6)
+        swit = false
+    end)
+end
+end)
+
+-- second page
+local set = venyx:addPage("설정", 5012544693)
+local colors = set:addSection("색깔")
+local ui = set:addSection("창")
+
+
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+
+ui:addButton("스크립트 허브 창 없애기", function()
+    game.CoreGui["Script Hub by Ferminando"]:Destroy()
+    game.CoreGui["AkaliNotif"]:Destroy()
+end)
+ui:addKeybind("창 껏다 키기", Enum.KeyCode.RightControl, function(v)
+    venyx:toggle(v)
+end)
+-- load
+venyx:SelectPage(venyx.pages[1], true)
