@@ -1,0 +1,2 @@
+# ferminando-script-crack
+lol
